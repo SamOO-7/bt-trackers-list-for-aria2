@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-transform" />
+  	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<title>trackersAria2</title>
+	<link rel="stylesheet" href="css/index.css" charset="utf-8" />
+	<link rel="stylesheet" href="https://softsoc.net/fonts/sofiapro_light_macroman/stylesheet.css" type="text/css" charset="utf-8" />
+</head>
+<body>
+	<div class="header">
+		<span class="h1">Aria2 BT Trackers</span>
+		<br /><br />
+		<span class="h2">One-Click-Copy</span>
+	</div>
+	<div class="wordback">
+		<div class="tab">
+			<span id="tits">trackers_best</span >
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="loadXMLDoc('https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt')" id="add">
+  				<i class="material-icons">add</i>
+			</button>
+		</div>
+		<div class="tab">
+			<span id="tits">trackers_all</span>
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="loadXMLDoc('https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt')" id="add">
+  				<i class="material-icons">add</i>
+			</button>
+		</div>
+		<div class="tab">
+			<span id="tits">trackers_all_udp</span>
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="loadXMLDoc('https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt')" id="add">
+  				<i class="material-icons">add</i>
+			</button>
+		</div>
+		<div class="tab">
+			<span id="tits">trackers_all_http</span>
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="loadXMLDoc('https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_http.txt')" id="add">
+  				<i class="material-icons">add</i>
+			</button>
+		</div>
+		<div class="tab">
+			<span id="tits">trackers_all_https</span>
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="loadXMLDoc('https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_https.txt')" id="add">
+  				<i class="material-icons">add</i>
+			</button>
+		</div>
+		<div class="tab">
+			<span id="tits">trackers_all_ws</span>
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="loadXMLDoc('https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_ws.txt')" id="add">
+  				<i class="material-icons">add</i>
+			</button>
+		</div>
+		<p id="note">当 DNS 出问题后可以使用以下这些转换成 IP 的 Trackers</p>
+		<div class="tab">
+			<span id="tits">trackers_best_ip</span>
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="loadXMLDoc('https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt')" id="add">
+  				<i class="material-icons">add</i>
+			</button>
+		</div>
+		<div class="tab">
+			<span id="tits">trackers_all_ip</span>
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="loadXMLDoc('https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_ip.txt')" id="add">
+  				<i class="material-icons">add</i>
+			</button>
+		</div>
+		
+		<button id="demo-show-toast" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored bucopy" type="button" onclick="copyUrl2()">COPY</button>
+		<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  			<div class="mdl-snackbar__text"></div>
+  		<button class="mdl-snackbar__action" type="button"></button>
+		</div>
+		
+		<div class="man_tk_text">
+			<i id="icos">0</i>
+			<p id="trackertext">the trackers display here...</p>
+		</div>
+		<textarea id="trackercopy"></textarea>
+		</div>
+		<br /><br />
+ <div align="center">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Test -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8761700628067314"
+     data-ad-slot="9946537744"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+   </script></div>
+  <br /><br />
+		<p class="head">Trackers列表来至<a title="github-trackers" href="https://github.com/ngosang/trackerslist">GITHUB</a>
+			<br>根据 Aria2 特性做的字符处理， 使用时直接复制粘贴致 Aria2 的 BT 服务器列表即可</p>
+<h5 id="footer"> &copy; 2018 @<a href="https://softsoc.net">softsoc.net</a></h5>
+	</div>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
